@@ -27,26 +27,39 @@ struct ContentView: View {
                 VStack {
                     Text("IOS")
                         .frame(width: 250, height: 60)
-                        .background(.black)// bonus change it to cyan
+                        .background(.cyan)// bonus change it to cyan
                         .clipShape(RoundedRectangle(cornerRadius: 35))
+                        .onTapGesture {
+                        name="apple"
+                        }
+                        
                         // cahnge name to iOS
 
                     Text("Gamedev")
                         .frame(width: 250, height: 60)
-                        .background(.black)// bonus change it to red
+                        .background(.red)// bonus change it to red
                         .clipShape(RoundedRectangle(cornerRadius: 35))
+                        .onTapGesture {
+                            name="gamedev"
+                        }
                         // cahnge name to Gamedev
 
                     Text("Web")
                         .frame(width: 250, height: 60)
-                        .background(.black)// bonus change it to blue
+                        .background(.blue)// bonus change it to blue
                         .clipShape(RoundedRectangle(cornerRadius: 35))
+                        .onTapGesture {
+                            name="web"
+                        }
                         // cahnge name to web
                         
                     Text("Android")
                         .frame(width: 250, height: 60)
-                        .background(.black)// bonus change it to green
+                        .background(.green)// bonus change it to green
                         .clipShape(RoundedRectangle(cornerRadius: 35))
+                        .onTapGesture {
+                            name="android"
+                        }
                         // cahnge name to Android
                 }
             
